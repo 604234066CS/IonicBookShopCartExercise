@@ -1,4 +1,3 @@
-
 <ion-header>
 
   <ion-navbar>
@@ -20,11 +19,11 @@
             <img src='{{book.thumbnailUrl}}' style="width:100px;height:120px;"/>
           </ion-thumbnail>          
           <p><strong>{{book.title}}</strong> - {{book.author}}</p>
-          <p><ion-badge color="secondary" item-end><strong>฿{{book.price}}</strong></ion-badge> </p>
+          <p><ion-badge color="danger" item-end><strong>฿{{book.price}}</strong></ion-badge> </p>
           <button ion-button   (click)="ShowDetail(book.bookid)">            
             <ion-icon name="md-list-box"     ></ion-icon>&nbsp;            
           </button>
-          <button ion-button  color="danger"  (click)="BookAdd(book.bookid,book.title,book.price)">
+          <button ion-button  color="secondary"  (click)="BookAdd(book.bookid,book.title,book.price)">
             <ion-icon name="cart"     ></ion-icon>&nbsp;
             Add to Cart   
           </button>
